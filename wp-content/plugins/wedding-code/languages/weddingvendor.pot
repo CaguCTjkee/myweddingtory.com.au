@@ -113,7 +113,7 @@ msgstr ""
 
 #: code/ajax-function-call.php:287
 #@ _s
-msgid "Someone requested that the password be reset for the following account:"
+msgid "You recently requested to reset you password for the following account:"
 msgstr ""
 
 #: code/ajax-function-call.php:290
