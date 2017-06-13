@@ -60,7 +60,7 @@ jQuery(document).ready(function($) {
                 'security' : security
             },
             success : function(data) {
-                if(data.message === 'Please check your registered email for password') {
+                if(data.message === 'Please check your registered email for password.') {
                     $('#register .form-group').addClass('hidden');
                 }
                 $('p.status', ctrl).text(data.message);
@@ -105,7 +105,7 @@ jQuery(document).ready(function($) {
                 'security' : security
             },
             success : function(data) {
-                if(data.message === 'Please check your registered email for password') {
+                if(data.message === 'Please check your registered email for password.') {
                     $('#register .form-group').addClass('hidden');
                 }
                 $('p.status', ctrl).text(data.message);
