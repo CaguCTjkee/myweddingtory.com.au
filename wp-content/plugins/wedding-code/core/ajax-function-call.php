@@ -119,7 +119,7 @@ function wedding_ajax_register(){
         echo json_encode(array('loggedin'=>false, 'message'=> esc_html__('This email address is already registered.','weddingvendor')));
     } else {
 	  wedding_wp_new_user_notification( $user_register, $info['user_pass'] ) ;
-	  echo json_encode(array('loggedin'=>false, 'message'=> esc_html__('Please check your registerd email for password.','weddingvendor')));
+	  echo json_encode(array('loggedin'=>false, 'message'=> esc_html__('Please check your registered email for password.','weddingvendor')));
     }
 
     die();
@@ -160,7 +160,7 @@ function wedding_ajax_couple_register(){
 	  update_user_meta( $user_register, 'user_weddingdate', $_POST['weddingdate'] ) ;
 	  update_user_meta( $user_register, 'user_type', 'couple' ) ;
 	  wedding_wp_new_user_notification( $user_register, $info['user_pass'] ) ;
-	  echo json_encode(array('loggedin'=>false, 'message'=> esc_html__('Please check your registerd email for password.','weddingvendor')));
+	  echo json_encode(array('loggedin'=>false, 'message'=> esc_html__('Please check your registered email for password.','weddingvendor')));
     }
 
     die();
