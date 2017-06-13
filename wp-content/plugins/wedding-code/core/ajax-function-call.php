@@ -294,7 +294,7 @@ if( !function_exists('wedding_ajax_forgot_pass') ){
 				'Reply-To: noreply@myweddingtory.com.au'."\r\n" .
 				'X-Mailer: PHP/' . phpversion();
 
-        $message = __('Someone requested that the password be reset for the following account:','weddingvendor') . "\r\n";
+        $message = __('You recently requested to reset you password for the following account:','weddingvendor') . "\r\n";
         $message .= get_option('siteurl') . "\r\n";
         $message .= sprintf(__('Username: %s','weddingvendor'), $user_login) . "\r\n";
         $message .= __('If this was a mistake, just ignore this email and nothing will happen.','weddingvendor') . "\r\n\r\n";
@@ -316,7 +316,7 @@ if( !function_exists('wedding_ajax_forgot_pass') ){
 
         //wp_mail( $to, $subject, $body, $headers );
 
-        $msg = __('Someone requested that the password be reset for the following account','weddingvendor') . '<br>';
+        $msg = __('You recently requested to reset you password for the following account','weddingvendor') . '<br>';
         //$msg .= get_option('siteurl') . "\r\n";
         $msg .= __('Username:','weddingvendor'). $user_login . '<br><br>';
         $msg .= __('If this was a mistake, just ignore this email and nothing will happen.','weddingvendor') . '<br>';
