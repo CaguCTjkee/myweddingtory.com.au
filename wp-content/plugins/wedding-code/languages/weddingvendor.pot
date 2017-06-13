@@ -33,7 +33,7 @@ msgstr ""
 #: code/ajax-function-call.php:116
 #: code/ajax-function-call.php:157
 #@ _s
-msgid "Please check your registerd email for password."
+msgid "Please check your registered email for password."
 msgstr ""
 
 #: code/ajax-function-call.php:194
